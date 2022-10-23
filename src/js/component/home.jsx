@@ -1,5 +1,6 @@
 import React from "react";
 import Tangerine from "../../img/rbTangerine.jpg"
+import Dragon from "../../img/rbDragonFruit.jpg"
 
 
 //create your first component
@@ -8,9 +9,9 @@ const Home = () => {
 		<>
     <Navbar />
 		<Jumbotron />
-    <div className="d-md-flex mb-5  justify-content-md-around">
+    <div className="d-flex flex-wrap m-5 justify-content-around">
     <Card />
-    <Card />
+    <Card /> {/*src={Dragon} className="card-img-top" alt="Dragon"  */}
     <Card />
     <Card />
 		</div>
