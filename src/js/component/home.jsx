@@ -62,7 +62,7 @@ function Navbar () {
 function Card ({img}) {
    return (
     <div className="card" style={{width: "18rem"}}>
-  <img src={img} className="card-img-top" alt="Tangerine" />
+  <img src={img} className="cardImage" alt="Tangerine" />
   <div className="card-body">
     <h5 className="card-title">Limited Redbulls</h5>
     <p className="card-text">Experience the Orange Edition, the Green Edition, the Yellow Edition, & Blue Edition Redbull. Prices vary, (stay away from Gas stations Near airport. they charge an arm and a leg..</p>
