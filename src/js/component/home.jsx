@@ -1,6 +1,8 @@
 import React from "react";
 import Tangerine from "../../img/rbTangerine.jpg"
 import Dragon from "../../img/rbDragonFruit.jpg"
+import Tropical from "../../img/rbTropical.jpg"
+import Blueberry from "../../img/rbBlueberry.jpg"
 
 
 //create your first component
@@ -10,10 +12,10 @@ const Home = () => {
     <Navbar />
 		<Jumbotron />
     <div className="d-flex flex-wrap m-5 justify-content-around">
-    <Card />
-    <Card /> {/*src={Dragon} className="card-img-top" alt="Dragon"  */}
-    <Card />
-    <Card />
+    <Card img={(Tangerine)}/>
+    <Card img={(Dragon)}/>
+    <Card img={(Tropical)}/>
+    <Card img={(Blueberry)}/>
 		</div>
     <Footer />
 		</>
@@ -23,8 +25,8 @@ const Home = () => {
 function Jumbotron () {
 	return (
 		<div className="jumbotron">
-  <h1 className="display-3">The Fantastic Redbull</h1>
-  <p className="lead">drink that might give you wings or not.. still working on a theory...</p>
+  <h1 className="display-3">"Limited Edition" Redbulls</h1>
+  <p className="lead">drinks that might give you wings or not.. still working on a theory...</p>
   <hr className="my-4" />
   <p>There was once a time where Drinking Green Tea would give you wings, but now RedBulls have taken over.</p>
   <p className="lead">
@@ -57,14 +59,14 @@ function Navbar () {
   );
 };
 
-function Card () {
+function Card ({img}) {
    return (
     <div className="card" style={{width: "18rem"}}>
-  <img src={Tangerine} className="card-img-top" alt="Tangerine" />
+  <img src={img} className="card-img-top" alt="Tangerine" />
   <div className="card-body">
-    <h5 className="card-title">Tangerine Redbull</h5>
-    <p className="card-text">The Best RedBull so far, theres also one called "dragon fruit" but this flavor is flawless</p>
-    <a href="https://www.redbull.com/us-en/energydrink/red-bull-orange-edition" className="btn btn-primary">Ingredients</a>
+    <h5 className="card-title">Limited Redbulls</h5>
+    <p className="card-text">Experience the Orange Edition, the Green Edition, the Yellow Edition, & Blue Edition Redbull. Prices vary, (stay away from Gas stations Near airport. they charge an arm and a leg..</p>
+    <a href="https://www.redbull.com/us-en/energydrink" className="btn btn-primary">Learn More</a>
   </div>
 </div>
    )
@@ -89,6 +91,5 @@ function Footer () {
 </div>
   )
 }
-
 
 export default Home;
