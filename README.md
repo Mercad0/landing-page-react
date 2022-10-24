@@ -1,4 +1,4 @@
-## website here https://mercad0.github.io/landing-page-react/
+## website here https://Mercad0.github.io/landing-page-react/
 
 
 # Hello World with React boilerplate
