@@ -7,7 +7,7 @@ import Blueberry from "../../img/rbBlueberry.jpg"
 
 function Card () {
     return (
-     <div className="">
+     <div className="d-flex flex-wrap justify-content-around">
         <RedBullDetails img={Tangerine} title="The Orange Edition" details="If you like the fruity-fresh taste of tangerine*, the Red Bull Orange Edition is perfect for you." button="Learn Orange" link="https://www.redbull.com/us-en/energydrink/red-bull-orange-edition" />
         <RedBullDetails img={Dragon} title="The Green Edition" details="The Red Bull Green Edition with the exotic taste of Dragon Fruit." button="Learn Green" link="https://www.redbull.com/us-en/energydrink/red-bull-green-edition"/>
         <RedBullDetails img={Tropical} title="The Yellow Edition" details="The Yellow Edition. Experience the exotic taste of tropical fruits*." button="Learn Yellow" link="https://www.redbull.com/us-en/energydrink/red-bull-yellow-edition" />

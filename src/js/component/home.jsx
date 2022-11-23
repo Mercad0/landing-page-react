@@ -11,9 +11,7 @@ const Home = () => {
 		<>
     <Navbar />
 		<Jumbotron />
-    <div className="d-flex flex-wrap m-5 justify-content-around">
     <Card />
-		</div>
     <Footer />
 		</>
 	);
